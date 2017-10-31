@@ -11,10 +11,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableCircuitBreaker
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaConsumerApplication {
+public class EurekaConsumerRibbonHystrixApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaConsumerApplication.class, args);
+		SpringApplication.run(EurekaConsumerRibbonHystrixApplication.class, args);
 	}
 	
 	@Bean
