@@ -51,10 +51,17 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>eureka-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+				  <source>1.8</source> 
+		          <target>1.8</target> 
+		          <encoding>utf-8</encoding>
+		          <mainClass>com.moting.spring.EurekaServerApplication</mainClass> 
+		        </configuration> 
 			</plugin>
 		</plugins>
 	</build>
